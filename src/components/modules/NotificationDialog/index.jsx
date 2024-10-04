@@ -30,7 +30,11 @@ const NotificationDialog = ({
     >
       <AlertDialogOverlay />
 
-      <AlertDialogContent fontFamily="CustomSansSerif" rounded={15}>
+      <AlertDialogContent
+        mx={{ base: 4, md: 0 }}
+        fontFamily="CustomSansSerif"
+        rounded={15}
+      >
         <AlertDialogBody>
           <VStack py={5}>
             <Stack

@@ -54,7 +54,7 @@ const Service = () => {
               onClose();
             }}
           >
-            <VStack py={3}>
+            <VStack py={3} textAlign="center">
               <Text fontSize="xl" lineHeight={4}>
                 {`Pembayaran ${
                   service_detail?.service_name?.toLowerCase() || ""
@@ -87,7 +87,7 @@ const Service = () => {
               onClose();
             }}
           >
-            <VStack py={3}>
+            <VStack py={3} textAlign="center">
               <Text fontSize="xl" lineHeight={4}>
                 {`Pembayaran ${
                   service_detail?.service_name?.toLowerCase() || ""
@@ -145,7 +145,7 @@ const Service = () => {
         callbackQuestion={handlePayTransaction}
         answerYesQuestion="Ya, lanjutkan Bayar"
       >
-        <VStack py={3}>
+        <VStack py={3} textAlign="center">
           <Text fontSize="xl" lineHeight={4}>
             {`Bayar ${
               service_detail?.service_name?.toLowerCase() || ""

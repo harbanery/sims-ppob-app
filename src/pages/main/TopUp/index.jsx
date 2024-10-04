@@ -75,7 +75,7 @@ const TopUp = () => {
                 onClose();
               }}
             >
-              <VStack py={3}>
+              <VStack py={3} textAlign="center">
                 <Text fontSize="xl" lineHeight={4}>
                   Top Up sebesar
                 </Text>
@@ -106,7 +106,7 @@ const TopUp = () => {
                 onClose();
               }}
             >
-              <VStack py={3}>
+              <VStack py={3} textAlign="center">
                 <Text fontSize="xl" lineHeight={4}>
                   Top Up sebesar
                 </Text>
@@ -212,7 +212,7 @@ const TopUp = () => {
         callbackQuestion={handleTopUp}
         answerYesQuestion="Ya, lanjutkan Top Up"
       >
-        <VStack py={3}>
+        <VStack py={3} textAlign="center">
           <Text fontSize="xl" lineHeight={4}>
             Anda yakin untuk Top Up sebesar
           </Text>
