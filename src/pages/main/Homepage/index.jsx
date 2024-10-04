@@ -21,7 +21,7 @@ const ServiceSection = ({ services = [] }) => {
   return (
     <Flex
       w="full"
-      justifyContent="flex-start"
+      justifyContent={{ base: "center", lg: "flex-start" }}
       alignItems="flex-start"
       gap={8}
       wrap="wrap"
