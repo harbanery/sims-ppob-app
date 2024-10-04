@@ -26,6 +26,7 @@ import {
   updateImageProfile,
   updateProfile,
 } from "../../../features/membershipSlice";
+import ProfilePhoto from "../../../assets/Profile Photo.png";
 
 const Account = () => {
   const { user, loading } = useSelector((state) => state.membership);
@@ -210,7 +211,7 @@ const Account = () => {
                 user?.profile_image !=
                   "https://minio.nutech-integrasi.com/take-home-test/null"
                   ? user?.profile_image
-                  : "/src/assets/Profile Photo.png"
+                  : ProfilePhoto
               }
               size="2xl"
               cursor="pointer"

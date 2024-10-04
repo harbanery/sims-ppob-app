@@ -1,6 +1,7 @@
 import { Box, Flex, Image, Stack } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
 import React from "react";
+import DashboardAuth from "../../../assets/Illustrasi Login.png";
 
 const LayoutAuth = () => {
   return (
@@ -27,7 +28,7 @@ const LayoutAuth = () => {
             w="full"
             h="full"
             draggable={false}
-            src="/src/assets/Illustrasi Login.png"
+            src={DashboardAuth}
             objectFit={{ base: "cover" }}
             objectPosition="right center"
           />

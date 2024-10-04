@@ -1,11 +1,12 @@
 import { HStack, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import Logo from "../../../assets/Logo.png";
 
 const HeaderAuth = ({ description = "" }) => {
   return (
     <>
       <HStack>
-        <Image w={"30px"} src="/src/assets/Logo.png" />
+        <Image w={"30px"} src={Logo} />
         <Text fontWeight={600} fontSize="2xl">
           SIMS PPOB
         </Text>

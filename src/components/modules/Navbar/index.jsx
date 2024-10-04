@@ -15,6 +15,7 @@ import {
 import React from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { NavLink, useNavigate } from "react-router-dom";
+import Logo from "../../../assets/Logo.png";
 
 const Navbar = ({ location = "" }) => {
   const navigate = useNavigate();
@@ -46,7 +47,7 @@ const Navbar = ({ location = "" }) => {
       >
         <NavLink to={"/"} replace={true}>
           <HStack pl={2}>
-            <Image w={"20px"} src="/src/assets/Logo.png" />
+            <Image w={"20px"} src={Logo} />
             <Text fontWeight={600}>SIMS PPOB</Text>
           </HStack>
         </NavLink>

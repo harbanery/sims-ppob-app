@@ -101,8 +101,8 @@ const BannerSection = ({ banners = [] }) => {
       <Stack alignItems="center">
         <Box px={2} w="full" minW="270px" minH="121px">
           <Image
-            src={banner?.banner_image || "/src/assets/Banner 1.png"}
-            alt={banner?.banner_name || "Banner 1"}
+            src={banner?.banner_image || ""}
+            alt={banner?.banner_name || ""}
             w="full"
             h="full"
             objectFit="cover"

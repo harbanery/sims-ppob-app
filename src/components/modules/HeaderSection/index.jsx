@@ -3,14 +3,13 @@ import {
   Box,
   Flex,
   HStack,
-  Stack,
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
 import { formatCurrency } from "../../../helpers/currency";
 import { HiOutlineEye } from "react-icons/hi";
-import { path } from "framer-motion/m";
+import ProfilePhoto from "../../../assets/Profile Photo.png";
 
 const HeaderSection = ({ account = {}, balance = 0, location = "" }) => {
   const allowPathname = ["/", "/top-up", "/transaction", "/service"];
@@ -45,7 +44,7 @@ const ProfileSection = ({ account = {} }) => {
           account?.profile_image !=
             "https://minio.nutech-integrasi.com/take-home-test/null"
             ? account?.profile_image
-            : "/src/assets/Profile Photo.png"
+            : ProfilePhoto
         }
         border="1px solid lightgray"
         size="lg"
