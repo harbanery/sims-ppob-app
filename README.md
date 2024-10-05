@@ -52,10 +52,10 @@ To get started with the project locally, follow these steps:
 To run the application locally on your development server, use the following command:
 
 ```bash
-npm start
+npm run dev
 ```
 
-The app will run on `http://localhost:3000`.
+The app will run on `http://localhost:5173`.
 
 ## Deployment
 
