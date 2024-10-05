@@ -41,16 +41,24 @@ export const mainLoader = async ({}) => {
 };
 
 export const homepageLoader = async ({}) => {
-  await Promise.all([
-    store.dispatch(getBanners()).unwrap(),
-    store.dispatch(getServices()).unwrap(),
-  ]);
+  const token = getTokenfromSessionStorage();
+
+  if (token) {
+    await Promise.all([
+      store.dispatch(getBanners()).unwrap(),
+      store.dispatch(getServices()).unwrap(),
+    ]);
+  }
 
   return null;
 };
 
 export const serviceLoader = async ({}) => {
-  await store.dispatch(getServices()).unwrap();
+  const token = getTokenfromSessionStorage();
+
+  if (token) {
+    await store.dispatch(getServices()).unwrap();
+  }
 
   return null;
 };
